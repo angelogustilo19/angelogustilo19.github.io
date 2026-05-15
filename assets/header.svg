@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="200" viewBox="0 0 1200 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f15;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16A085;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#16A085;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16A085;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16A085;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#16A085" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <circle cx="100" cy="50" r="80" fill="none" stroke="#16A085" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="1100" cy="160" r="100" fill="none" stroke="#16A085" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="600" cy="180" r="120" fill="none" stroke="#16A085" stroke-width="0.3" opacity="0.1"/>
+
+  <rect x="0" y="0" width="100%" height="3" fill="url(#accent)"/>
+
+  <text x="80" y="100" font-family="monospace" font-size="60" fill="#16A085" opacity="0.25">&lt;</text>
+  <text x="1100" y="100" font-family="monospace" font-size="60" fill="#16A085" opacity="0.25">/&gt;</text>
+
+  <text x="50%" y="88" dominant-baseline="middle" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="52" font-weight="800" fill="url(#textGlow)" filter="url(#glow)">ANGELO GUSTILO</text>
+
+  <rect x="420" y="110" width="360" height="2" fill="#16A085" opacity="0.6" rx="1"/>
+
+  <text x="50%" y="138" dominant-baseline="middle" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#a0a0a0" letter-spacing="6">FULL-STACK AI SYSTEMS ENGINEER</text>
+
+  <circle cx="600" cy="165" r="2.5" fill="#16A085" opacity="0.5"/>
+  <circle cx="590" cy="165" r="1.5" fill="#16A085" opacity="0.3"/>
+  <circle cx="610" cy="165" r="1.5" fill="#16A085" opacity="0.3"/>
+
+  <rect x="0" y="197" width="100%" height="3" fill="url(#accent)"/>
+</svg>
